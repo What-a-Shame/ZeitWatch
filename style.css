@@ -682,6 +682,12 @@ section#noticias p {
     margin: 2rem auto;
 }
 
+section#noticias a {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
 section#noticias > div {
     display: grid;
     gap: 20px;
@@ -719,11 +725,11 @@ section#noticias > div > div:nth-child(5) {
     grid-area: z5;
 }
 
-section#noticias > div > div {
+section#noticias > div > div a {
     position: relative;
 }
 
-section#noticias > div > div > div {
+section#noticias > div > div > a div {
     overflow: hidden;
     position: absolute;
     bottom: 0;
@@ -736,11 +742,11 @@ section#noticias > div > div > div {
     transition: all .4s ease-in-out;
 }
 
-section#noticias > div > div > div h3 {
+section#noticias > div > div > a div h3 {
     color: var(--titulos);
 }
 
-section#noticias > div > div:hover > div {
+section#noticias > div > div:hover > a div {
     height: 20%;
 }
 
