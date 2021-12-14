@@ -602,20 +602,20 @@ section#galeria-lady p {
     color: var(--textos);
 }
 
-section#celebracion > div {
+section#cambio > div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-section#celebracion > div > div {
+section#cambio > div > div {
     width: 400px;
     overflow: hidden;
     position: relative;
 }
 
-section#celebracion > div div > div {
+section#cambio > div div > div {
     overflow: hidden;
     position: absolute;
     color: var(--textos);
@@ -627,16 +627,121 @@ section#celebracion > div div > div {
     transition: all .4s ease-in-out;
 }
 
-section#celebracion > div div:hover > div {
+section#cambio > div div:hover {
+    cursor: pointer;
+}
+
+section#cambio > div div:hover > div {
     height: 0%;
 }
 
-section#celebracion > div div img {
+section#cambio > div div img {
     transition: all .3s ease-in-out;
 }
 
-section#celebracion > div div:hover img {
+section#cambio > div div:hover img {
     transform: scale(1.1);
+}
+
+/*
+    Novedades
+*/
+
+section#novedades-cabecera {
+    padding: 0;
+    width: 100%;
+    height: 75vh;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#novedades-cabecera h1 {
+    color: var(--textos);
+    font-size: 2.5em;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+section#novedades-cabecera video{
+    filter: brightness(.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+}
+
+section#noticias p {
+    font-size: 1.8em;
+    color: var(--textos);
+    width: 50%;
+    margin: 2rem auto;
+}
+
+section#noticias > div {
+    display: grid;
+    gap: 20px;
+    height: 150vh;
+    grid-template-areas: "z4 z4 z4"
+                         "z4 z4 z4"
+                         "z3 z3 z2"
+                         "z3 z3 z2"
+                         "z5 z1 z1"
+                         "z5 z1 z1";
+}
+
+section#noticias > div > div:nth-child(1) {
+    background: url("assets/media/fotos/buzo.webp") no-repeat center center/cover;
+    grid-area: z1;
+}
+
+section#noticias > div > div:nth-child(2) {
+    background: url("assets/media/fotos/diamantes.webp") no-repeat center center/cover;
+    grid-area: z2; 
+}
+
+section#noticias > div > div:nth-child(3) {
+    background: url("assets/media/fotos/evento.webp") no-repeat center center/cover;
+    grid-area: z3;
+}
+
+section#noticias > div > div:nth-child(4) {
+    background: url("assets/media/fotos/exploracion.jpg") no-repeat center center/cover;
+    grid-area: z4;
+}
+
+section#noticias > div > div:nth-child(5) {
+    background: url("assets/media/fotos/cine.jpg") no-repeat center center/cover;
+    grid-area: z5;
+}
+
+section#noticias > div > div {
+    position: relative;
+}
+
+section#noticias > div > div > div {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    background: var(--header);
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+}
+
+section#noticias > div > div > div h3 {
+    color: var(--titulos);
+}
+
+section#noticias > div > div:hover > div {
+    height: 20%;
 }
 
 /*
