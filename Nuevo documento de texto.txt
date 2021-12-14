@@ -1,0 +1,9 @@
+//////////////////////////////////////// Textos en general ////////////////////////////////////////
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+font-family: 'Kanit', sans-serif;
+
+/////////////////////////////////////////////// Nombre Empresa //////////////////////////////////////////////////
+
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+font-family: 'Notable', sans-serif;

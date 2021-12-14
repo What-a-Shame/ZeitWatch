@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@font-face {
+    font-family: 'Titulo';
+    src: url("assets/fuentes/titulos.woff2");
+}
+
+/*
+    Variables
+*/
+
+:root {
+    --titulos: #ffc36b;
+    --textos: white;
+    --header: #0f0f0f;
+    --cuerpo: rgba(15, 15, 15, 0.9);
+}
+
+/*
+    Reseteo
+*/
+
+*::selection {
+    color: var(--header);
+    background: var(--titulos);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Kanit', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Titulo';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    background: var(--cuerpo);
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+section > h2 {
+    text-align: center;
+    color: var(--titulos);
+    max-width: fit-content;
+    margin: auto;
+}
+
+section > h2::after {
+    content: " ";
+    display: block;
+    width: 70%;
+    height: 2px;
+    margin: 10px auto 25px auto;
+    background: var(--textos);
+}
+
+/*
+    Header
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: var(--header);
+    top: 0;
+    z-index: 999;
+}
+
+#logo {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: var(--titulos);
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.icon {
+    display: none;
+    float: left;
+    color: var(--titulos);
+    font-weight: bold;
+    font-size: 1.8em;
+}
+  
+@media (max-width: 600px) {
+    #logo {
+        width: 125px;
+    }
+    .nav.responsive {
+        width: 100%;
+        top: 100%;
+        position: absolute;
+        background-color: var(--header);
+    }
+    .icon {
+        display: block;
+        position: absolute;
+        top: 35%;
+        right: 10%;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .nav a {
+        display: none;
+    }
+}
+
+/*
+    Main
+*/
+
+/*
+    Index
+*/
+
+section#portada {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#portada a {
+    color: var(--textos);
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+section#portada a:hover {
+    transform: scale(1.05);
+    color: var(--titulos);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+section#portada video{
+    filter: brightness(.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+}
+
+section#acerca p {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--textos);
+    width: 50%;
+    margin: auto;
+}
+
+section#recordar > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section#recordar > div div {
+    align-self: normal;
+    width: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+section#recordar > div div img {
+    height: 100%;
+    filter: brightness(.8);
+    transition: all .3s ease-in-out;
+}
+
+section#recordar > div div:hover img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+section#recordar > div div h3 {
+    color: var(--titulos);
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+section#recordar > div div > div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background-color: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s linear;
+}
+
+section#recordar > div div:hover > div {
+    height: 10%;
+}
+
+section#recordar p {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--textos);
+    width: 50%;
+    margin: 1rem auto;
+}
+
+section#recordar p span {
+    font-style: italic;
+}
+
+section#interseccion {
+    padding: 0;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+section#interseccion video{
+    filter: brightness(.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+section#descubre > div div img {
+    height: 100%;
+}
+
+section#descubre > div {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "f1 f1 f1 f1 f1"
+                         "f2 f2 f3 f3 f3"
+                         "f2 f2 f3 f3 f3";
+    justify-items: stretch;
+}
+  
+section#descubre > div div:nth-child(1) {
+    grid-area: f1;
+}
+  
+section#descubre > div div:nth-child(2) {
+    grid-area: f2;
+}
+  
+section#descubre > div div:nth-child(3) {
+    grid-area: f3;
+}
+
+section#descubre > div div {
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+section#descubre > div div h3 {
+    color: var(--titulos);
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+section#descubre > div div > div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background-color: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s linear;
+}
+
+section#descubre > div div:hover > div {
+    height: 20%;
+}
+
+section#descubre > div div img {
+    transition: all .4s linear;
+}
+
+section#descubre > div div:hover img {
+    filter: brightness(.7);
+}
+
+/*
+    Relojes
+*/
+
+section#seccion1 {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    background: url("assets/media/fotos/relojes_portada.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section#seccion1 > div {
+    margin-right: 20%;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+section#seccion1 > div h1 {
+    font-size: 2em;
+    color: var(--titulos);
+}
+
+section#seccion1 > div h2 {
+    color: var(--textos);
+}
+
+section#productos > div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+section#productos > div div {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    align-self: normal;
+}
+
+section#productos > div div img {
+    height: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+section#productos > div div:hover img  {
+    transform: scale(1.1);
+}
+
+section#productos > div div h3 {
+    color: var(--titulos);
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+section#productos > div div > div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    background-color: var(--cuerpo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s linear;
+}
+
+section#productos > div div:hover > div {
+    height: 0%;
+}
+
+section#no-te-pierdas{
+    padding: 0;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+section#no-te-pierdas a {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#no-te-pierdas video{
+    filter: brightness(.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+section#no-te-pierdas h2 {
+    z-index: 1;
+    color: var(--textos);
+    font-size: 2em;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+section#no-te-pierdas h2:hover {
+    transform: scale(1.05);
+    color: var(--titulos);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/*
+    FICHA PRODUCTO
+*/
+
+section#vmenu {
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#vmenu h1 {
+    color: var(--textos);
+    font-size: 3.5em;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+section#vmenu h1:hover {
+    transform: scale(1.05);
+    color: var(--titulos);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+section#vmenu video{
+    filter: brightness(.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+}
+
+section#info p {
+    width: 50%;
+    margin: auto;
+    font-size: 1.2em;
+    text-align: justify;
+    color: var(--textos);
+}
+
+section#interseccion-lady {
+    padding: 0;
+    width: 100%;
+    height: 60vh;
+    background: url("assets/media/fotos/interseccion-lady.jpg") no-repeat center center/cover;
+    position: relative;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#interseccion-lady div h2 {
+    font-size: 2em;
+    width: 30%;
+    margin: auto;
+    color: var(--textos);
+}
+
+section#interseccion-lady2 {
+    padding: 0;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+section#interseccion-lady2 video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+section#galeria-lady > div div img {
+    height: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+section#galeria-lady > div div {
+    overflow: hidden;
+}
+
+section#galeria-lady > div div:hover img {
+    transform: scale(1.1);
+}
+
+section#galeria-lady > div {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "g1 g1 g1"
+                         "g2 g2 g3"
+                         "g2 g2 g3"
+                         "g4 g4 g4"
+                         "g5 g6 g6"
+                         "g5 g6 g6"
+                         "g7 g7 g7";
+}
+  
+section#galeria-lady > div div:nth-child(1) {
+    grid-area: g1;
+}
+  
+section#galeria-lady > div div:nth-child(2) {
+    grid-area: g2;
+}
+  
+section#galeria-lady > div div:nth-child(3) {
+    grid-area: g3;
+}
+
+section#galeria-lady > div div:nth-child(4) {
+    grid-area: g4;
+}
+  
+section#galeria-lady > div div:nth-child(5) {
+    grid-area: g5;
+}
+  
+section#galeria-lady > div div:nth-child(6) {
+    grid-area: g6;
+}
+
+section#galeria-lady > div div:nth-child(7) {
+    grid-area: g7;
+}
+
+section#galeria-lady p {
+    width: 50%;
+    font-size: 1.6em;
+    margin: 1rem auto;
+    color: var(--textos);
+}
+
+section#celebracion > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#celebracion > div > div {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+section#celebracion > div div > div {
+    overflow: hidden;
+    position: absolute;
+    color: var(--textos);
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 1em;
+    transition: all .4s ease-in-out;
+}
+
+section#celebracion > div div:hover > div {
+    height: 0%;
+}
+
+section#celebracion > div div img {
+    transition: all .3s ease-in-out;
+}
+
+section#celebracion > div div:hover img {
+    transform: scale(1.1);
+}
+
+/*
+    Footer
+*/
+
+footer{
+    background:var(--header);
+    padding:30px 0px;
+    text-align:center;
+}
+
+footer div{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:var(--textos);
+    font-size:1em;
+}
+
+footer div a{
+    text-decoration:none;
+    color:var(--textos);
+    transition:0.5s;
+}
+
+footer div a:hover{
+    color:var(--titulos);
+}
+
+footer div ul{
+    width:100%;
+}
+
+footer div ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+footer div a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+
+@media (max-width:720px){
+    footer{
+        text-align:left;
+        padding:5%;
+    }
+    footer div ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    footer div a i{
+        margin:0% 3%;
+    }
+}
