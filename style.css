@@ -1107,7 +1107,6 @@ footer div a i{
     section#galeria-lady p {
         width: 75%;
         font-size: 1.2em;
-        margin: 1rem auto;
     }
 
     section#noticias p {
@@ -1141,6 +1140,15 @@ footer div a i{
     section#contacto-fin h2 {
         font-size: 2em;
     }
+
+    section#noticias > div {
+        grid-template-areas:
+            "z4 z4 z4"
+            "z3 z3 z3"
+            "z2 z2 z2"
+            "z5 z5 z5"
+            "z1 z1 z1";
+    }
 }
 
 @media (max-width: 768px) {
@@ -1167,5 +1175,236 @@ footer div a i{
 
     section#vmenu h1 {
         font-size: 2.8em;
+    }
+
+    section#info p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    section#galeria-lady > div {
+        width: 100%;
+    }
+
+    section#galeria-lady p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    section#noticias p {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    section#noticias > div > div > a div {
+        height: 20%;
+    }
+
+    section#recordar > div div > div {
+        height: 10%;
+    }
+
+    section#descubre > div div > div {
+        height: 20%;
+    }
+
+    section#explora-cabecera h1 {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        font-size: 2em;
+    }
+
+    section#elementos > div:nth-child(1), section#elementos > div:nth-child(3) {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    section#elementos > div:nth-child(2) {
+        width: 70%;
+        margin: 4rem auto;
+    }
+
+    section#elementos > div:nth-child(6) h2 {
+        font-size: 1.5em;
+    }
+
+    section#elementos > div:nth-child(6) small {
+        font-size: 1.2em;
+    }
+
+    section#elementos > div:nth-child(4) p, section#elementos > div:nth-child(5) p {
+        width: 70%;
+        font-size: 1.1em;
+    }
+
+    section#contacto form select {
+        width: 50%;
+    }
+
+    section#contacto form input[type="date"] {
+        width: 35%;
+    }
+
+    section#contacto-fin h2 {
+        text-align: center;
+        margin: auto;
+        width: 70%;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    section > h2 {
+        font-size: 1.2em;
+    }
+
+    section#portada a {
+        font-size: 1.5em;
+    }
+
+    section#acerca p, section#recordar p {
+        width: 100%;
+    }
+
+    section#seccion1 > div {
+        font-size: .65em;
+    }
+
+    section#no-te-pierdas h2 {
+        font-size: 1.5em;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    section#vmenu h1 {
+        font-size: 2.2em;
+    }
+
+    section#interseccion-lady div h2 {
+        font-size: 1.4em;
+        width: 80%;
+    }
+
+    section#galeria-lady > div {
+        grid-template-areas:
+            "g1 g1 g1"
+            "g2 g2 g2"
+            "g3 g3 g3"
+            "g4 g4 g4"
+            "g5 g5 g5"
+            "g6 g6 g6"
+            "g7 g7 g7";
+    }
+
+    section#novedades-cabecera h1 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 2.3em;
+    }
+
+    section#noticias p {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    section#elementos > div:nth-child(6) h2 {
+        width: 65%;
+    }
+
+    section#contacto form select {
+        width: 80%;
+    }
+
+    section#contacto form input[type="date"] {
+        width: 65%;
+    }
+
+    section#descubre > div div h3 {
+        font-size: .7em;
+    }
+
+    section#productos > div div h3 {
+        font-size: 1em;
+    }
+
+    section#cambio > div div > div {
+        font-size: .8em;
+    }
+
+    section#contacto-cabecera h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 370px) {
+    section {
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    section#portada a {
+        font-size: 1em;
+    }
+
+    section > h2 {
+        font-size: .8em;
+    }
+
+    section#acerca p, section#recordar p {
+        font-size: 1em;
+    }
+
+    section#vmenu h1 {
+        font-size: 1.8em;
+    }
+
+    section#interseccion-lady div h2 {
+        font-size: 1.2em;
+        width: 90%;
+    }
+
+    section#galeria-lady p {
+        font-size: 1em;
+    }
+
+    section#novedades-cabecera h1 {
+        font-size: 1.8em;
+    }
+
+    section#noticias p {
+        font-size: 1em;
+    }
+
+    section#noticias > div > div > a div {
+        font-size: .8em;
+    }
+
+    section#explora-cabecera h1 {
+        font-size: 1.5em;
+    }
+
+    section#elementos > div:nth-child(1), section#elementos > div:nth-child(3) {
+        font-size: 1em;
+    }
+
+    section#elementos > div:nth-child(2) {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    section#elementos > div:nth-child(4) p, section#elementos > div:nth-child(5) p {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    section#elementos > div:nth-child(6) h2 {
+        font-size: 1em;
+    }
+
+    section#elementos > div:nth-child(6) small {
+        font-size: .8em;
     }
 }
