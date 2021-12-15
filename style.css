@@ -1012,13 +1012,12 @@ footer div a i{
 
 @media (max-width:720px){
     footer{
-        text-align:left;
-        padding:5%;
+        text-align:center;
+        padding:20px;
     }
     footer div ul li{
         display:block;
         margin:10px 0px;
-        text-align:left;
     }
     footer div a i{
         margin:0% 3%;
@@ -1337,6 +1336,14 @@ footer div a i{
     section#contacto-cabecera h1 {
         font-size: 2em;
     }
+
+    section#noticias > div > div > a div {
+        font-size: .8em;
+    }
+
+    section#descubre > div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 370px) {
@@ -1376,10 +1383,6 @@ footer div a i{
 
     section#noticias p {
         font-size: 1em;
-    }
-
-    section#noticias > div > div > a div {
-        font-size: .8em;
     }
 
     section#explora-cabecera h1 {
