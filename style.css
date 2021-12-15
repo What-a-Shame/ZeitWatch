@@ -751,6 +751,123 @@ section#noticias > div > div:hover > a div {
 }
 
 /*
+    Ficha novedad
+*/
+
+main#explora {
+    background: rgba(0, 0, 0, .65) url("assets/media/fotos/noticia_portada.webp") no-repeat center center/cover fixed;
+    background-blend-mode: darken;
+}
+
+section#explora-cabecera {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#explora-cabecera h1 {
+    font-size: 4em;
+    color: var(--textos);
+}
+
+section#elementos {
+    width: 100%;
+    padding: 0;
+}
+
+section#elementos > div:nth-child(1) {
+    width: 50%;
+    margin: auto;
+    color: var(--textos);
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+section#elementos > div:nth-child(1) h2 {
+    text-align: left;
+    margin: 1.5rem auto;
+}
+
+section#elementos > div:nth-child(2) {
+    width: 50%;
+    margin: 4rem auto;
+}
+
+section#elementos > div:nth-child(3) {
+    width: 50%;
+    margin: auto;
+    color: var(--textos);
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+section#elementos > div:nth-child(4) {
+    margin: 50px 0 0 0;
+    padding: 100px;
+    background: url("assets/media/fotos/noticia_interseccion.webp") no-repeat center center/cover fixed;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#elementos > div:nth-child(4) p {
+    width: 50%;
+    font-weight: bold;
+    color: var(--header);
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+section#elementos > div:nth-child(5) {
+    padding: 100px;
+    background: url("assets/media/fotos/noticia_interseccion2.webp") no-repeat center center/cover fixed;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section#elementos > div:nth-child(5) p {
+    width: 50%;
+    font-weight: bold;
+    color: var(--header);
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+section#elementos > div:nth-child(6) {
+    padding: 100px;
+    background-blend-mode: darken;
+    background:rgba(0, 0, 0, .3) url("assets/media/fotos/noticia_interseccion3.webp") no-repeat center center/cover fixed;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--textos);
+}
+
+section#elementos > div:nth-child(6) h2 {
+    width: 50%;
+    font-size: 2.5em;
+}
+
+section#elementos > div:nth-child(6) small {
+    font-size: 1.6em;
+}
+
+/*
+    Contacto
+*/
+
+/*
     Footer
 */
 
