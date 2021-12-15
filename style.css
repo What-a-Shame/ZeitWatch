@@ -597,7 +597,8 @@ section#galeria-lady > div div:nth-child(7) {
 
 section#galeria-lady p {
     width: 50%;
-    font-size: 1.6em;
+    font-size: 1.4em;
+    text-align: justify;
     margin: 1rem auto;
     color: var(--textos);
 }
@@ -678,6 +679,7 @@ section#novedades-cabecera video{
 section#noticias p {
     font-size: 1.8em;
     color: var(--textos);
+    text-align: justify;
     width: 50%;
     margin: 2rem auto;
 }
@@ -867,6 +869,105 @@ section#elementos > div:nth-child(6) small {
     Contacto
 */
 
+section#contacto-cabecera {
+    background: rgba(0, 0, 0, .4) url("assets/media/fotos/contacto_portada.jpg") no-repeat center center/cover fixed;
+    background-blend-mode: darken;
+    padding: 0;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contacto-cabecera h1 {
+    font-size: 3.5em;
+    color: var(--textos);
+}
+
+section#contacto form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+option:disabled {
+    color: var(--titulos);
+}
+
+section#contacto form select {
+    width: 25%;
+    height: 50px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 1px var(--titulos);
+    color: var(--textos);
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+section#contacto form select:focus, section#contacto form input[type="date"]:focus {
+    outline: none;
+}
+
+section#contacto form label {
+    color: var(--titulos);
+    font-size: 1.2em;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+section#contacto form input[type="date"] {
+    width: 15%;
+    height: 50px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 1px var(--titulos);
+    background: rgba(0, 0, 0, .6);
+    color: var(--textos);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+section#contacto form input[type="date"]::after {
+    color: white;
+}
+
+section#contacto form input[type="submit"] {
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 5px 1px var(--titulos);
+    background: rgba(0, 0, 0, .6);
+    color: var(--textos);
+    transition: all .3s ease-in-out;
+}
+
+section#contacto form input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+section#contacto-fin {
+    background: rgba(0, 0, 0, .7) url("assets/media/fotos/contacto_fin.jpg") no-repeat center center/cover fixed;
+    background-blend-mode: darken;
+    padding: 0;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contacto-fin h2 {
+    font-size: 2.5em;
+    color: var(--textos);
+}
+
 /*
     Footer
 */
@@ -921,5 +1022,150 @@ footer div a i{
     }
     footer div a i{
         margin:0% 3%;
+    }
+}
+
+/*
+    Media pagina en general
+*/
+
+@media (max-width: 1435px) {
+    section#descubre > div {
+        width: 100%;
+    }
+
+    section#explora-cabecera h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 1200px) {
+    section#seccion1 > div {
+        margin-right: 10%;
+    }
+
+    section#info p {
+        width: 75%;
+    }
+
+    section#galeria-lady > div {
+        width: 75%;
+    }
+
+    section#interseccion-lady div h2 {
+        font-size: 1.6em;
+        width: 50%;
+    }
+
+    section#explora-cabecera h1 {
+        font-size: 3em;
+    }
+
+    section#elementos > div:nth-child(6) h2 {
+        font-size: 2em;
+    }
+
+    section#contacto form select {
+        width: 35%;
+    }
+
+    section#contacto form input[type="date"] {
+        width: 25%;
+    }
+
+    section#descubre > div div h3 {
+        font-size: 1em;
+    }
+
+    section#noticias > div > div > a div h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    section#portada a {
+        font-size: 1em;
+    }
+
+    section#acerca p {
+        width: 75%;
+    }
+
+    section#seccion1 > div {
+        margin-right: 5%;
+    }
+
+    section#info p {
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    section#galeria-lady > div {
+        width: 85%;
+    }
+
+    section#galeria-lady p {
+        width: 75%;
+        font-size: 1.2em;
+        margin: 1rem auto;
+    }
+
+    section#noticias p {
+        font-size: 1.4em;
+        width: 75%;
+        margin: 2rem auto;
+    }
+
+    section#explora-cabecera h1 {
+        font-size: 2em;
+    }
+
+    section#elementos > div:nth-child(4), section#elementos > div:nth-child(5), section#elementos > div:nth-child(6) {
+        padding: 35px;
+    }
+    
+    section#elementos > div:nth-child(1), section#elementos > div:nth-child(3) {
+        width: 75%;
+        font-size: 1.4em;
+    }
+
+    section#elementos > div:nth-child(4) p, section#elementos > div:nth-child(5) p {
+        width: 70%;
+        font-size: 1.2em;
+    }
+
+    section#contacto-cabecera h1 {
+        font-size: 3em;
+    }
+
+    section#contacto-fin h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    section#portada a {
+        width: 70%;
+        text-align: center;
+    }
+
+    section#recordar p {
+        width: 80%;
+    }
+
+    section#descubre > div {
+        width: 90%;
+        grid-template-areas:
+            "f1 f1 f1 f1 f1"
+            "f2 f2 f2 f2 f2"
+            "f3 f3 f3 f3 f3";
+    }
+
+    section#seccion1 > div {
+        font-size: .75em;
+    }
+
+    section#vmenu h1 {
+        font-size: 2.8em;
     }
 }
