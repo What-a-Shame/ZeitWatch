@@ -1,3 +1,4 @@
+/* FUENTES UTILIZADAS PARA LA WEB */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 @font-face {
     font-family: 'Titulo';
@@ -7,7 +8,7 @@
 /*
     Variables
 */
-
+/* COLORES CORPORATIVOS QUE SE REPITEN EN LA WEB */
 :root {
     --titulos: #ffc36b;
     --textos: white;
@@ -18,7 +19,7 @@
 /*
     Reseteo
 */
-
+/* ESTILOS MUY GENERALES QUE SE DAN EN TODA LA WEB */
 *::selection {
     color: var(--header);
     background: var(--titulos);
@@ -79,7 +80,7 @@ section > h2::after {
 /*
     Header
 */
-
+/* MANTIENE ESTILOS EN TODA LA WEB */
 header {
     display: flex;
     justify-content: space-between;
@@ -151,7 +152,8 @@ header {
     background-color: #ddd;
     color: black;
 }
-  
+
+/* AJUSTE DE RESPONSIVE PARA EL MENU DE NAVEGACION PARA PANTALLAS DE 600PX O MENOS */
 @media (max-width: 600px) {
     #logo {
         width: 125px;
@@ -181,6 +183,7 @@ header {
 
 /*
     Index
+    ESTILOS PARA TODOS LOS ELEMENOS QUE SE CONTIENEN EN INDEX.HTML
 */
 
 section#portada {
@@ -372,8 +375,9 @@ section#descubre > div div:hover img {
 
 /*
     Relojes
+    ESTILOS DE LOS ELEMENTOS CONTENIDOS EN RELOJES.HTML
 */
-
+/* CABECERA */
 section#seccion1 {
     padding: 0;
     width: 100%;
@@ -400,6 +404,7 @@ section#seccion1 > div h2 {
     color: var(--textos);
 }
 
+/* PRODUCTOS */
 section#productos > div {
     margin: auto;
     display: flex;
@@ -449,6 +454,7 @@ section#productos > div div:hover > div {
     height: 0%;
 }
 
+/* ULIMA SECCION DE NO TE PIERDAS */
 section#no-te-pierdas{
     padding: 0;
     width: 100%;
@@ -489,8 +495,9 @@ section#no-te-pierdas h2:hover {
 
 /*
     FICHA PRODUCTO
+    ESTILOS DE LOS ELEMENTOS CONTENIDOS EN FICHA_PRODUCTO.HTML
 */
-
+/* CABECERA */
 section#vmenu {
     padding: 0;
     width: 100%;
@@ -524,7 +531,7 @@ section#vmenu video{
     height: 100%;
     z-index: -9999;
 }
-
+/* TEXTO INFORMATIVO */
 section#info p {
     width: 50%;
     margin: auto;
@@ -532,7 +539,7 @@ section#info p {
     text-align: justify;
     color: var(--textos);
 }
-
+/* INTERSECCION */
 section#interseccion-lady {
     padding: 0;
     width: 100%;
@@ -569,7 +576,7 @@ section#interseccion-lady2 video{
     height: 100%;
     z-index: 1;
 }
-
+/* GALERIA DE FICHA PRODUCTO */
 section#galeria-lady > div div img {
     height: 100%;
     transition: transform .3s ease-in-out;
@@ -632,7 +639,7 @@ section#galeria-lady p {
     margin: 1rem auto;
     color: var(--textos);
 }
-
+/* GAMA PRODUCTOS */
 section#cambio > div {
     display: flex;
     justify-content: center;
@@ -676,8 +683,9 @@ section#cambio > div div:hover img {
 
 /*
     Novedades
+    ESTILOS DE LOS ELEMENTOS CONTENIDOS EN NOVEDADES.HTML
 */
-
+/* CABECERA */
 section#novedades-cabecera {
     padding: 0;
     width: 100%;
@@ -705,7 +713,7 @@ section#novedades-cabecera video{
     height: 100%;
     z-index: -9999;
 }
-
+/* INFORMACIÓN */
 section#noticias p {
     font-size: 1.8em;
     color: var(--textos);
@@ -784,6 +792,7 @@ section#noticias > div > div:hover > a div {
 
 /*
     Ficha novedad
+    ESTILOS DE LOS ELEMENTOS CONTENIDOS EN FICHA_NOVEDAD.HTML
 */
 
 main#explora {
@@ -898,6 +907,7 @@ section#elementos > div:nth-child(6) small {
 
 /*
     Contacto
+    ESTILOS DE LOS ELEMENTOS CONTENIDOS EN CONTACTO.HTML
 */
 
 section#contacto-cabecera {
@@ -1002,7 +1012,7 @@ section#contacto-fin h2 {
 /*
     Footer
 */
-
+/* MANTIENE ESTILOS EN TODA LA WEB */
 footer{
     background:var(--header);
     padding:30px 0px;
@@ -1041,6 +1051,7 @@ footer div a i{
     margin:0% 1%;
 }
 
+/* AJUSTE RESPONSIVE EXCLUSIVO DEL FOOTER */
 @media (max-width:720px){
     footer{
         text-align:center;
@@ -1056,7 +1067,14 @@ footer div a i{
 }
 
 /*
-    Media pagina en general
+    Ajuste de responsive para la web completa
+    Uso de las siguiente medidas de pantalla 
+        - 1435px
+        - 1200px
+        - 992px
+        - 768px
+        - 576px
+        - 370px
 */
 
 @media (max-width: 1435px) {
