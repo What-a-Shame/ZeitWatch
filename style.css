@@ -827,7 +827,8 @@ section#elementos > div:nth-child(4) p {
 
 section#elementos > div:nth-child(5) {
     padding: 100px;
-    background: url("assets/media/fotos/noticia_interseccion2.webp") no-repeat center center/cover fixed;
+    background: rgba(0, 0, 0, 0.658) url("assets/media/fotos/noticia_interseccion2.webp") no-repeat center center/cover fixed;
+    background-blend-mode: darken;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -838,7 +839,7 @@ section#elementos > div:nth-child(5) {
 section#elementos > div:nth-child(5) p {
     width: 50%;
     font-weight: bold;
-    color: var(--header);
+    color: var(--textos);
     text-align: justify;
     font-size: 1.5em;
 }
